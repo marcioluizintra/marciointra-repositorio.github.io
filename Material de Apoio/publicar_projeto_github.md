@@ -62,3 +62,33 @@ Ao executar o `git push`, o terminal pedirá seu nome de usuário (**marcioluizi
 Se você ainda não tem um PAT, precisará gerar um nas configurações de desenvolvedor do GitHub antes de prosseguir.
 
 Após a autenticação bem-sucedida, seus arquivos estarão disponíveis no repositório **marciointra-repositorio.github.io** no GitHub.
+
+
+
+Passo a Passo
+1. Criar um Repositório no GitHub 
+Você precisa de um local no GitHub para armazenar os arquivos do seu site. 
+No canto superior direito de qualquer página do GitHub, clique no sinal de + e selecione New repository (Novo repositório).
+Nome do repositório: Para um site de usuário ou organização, o nome do repositório deve ser seu_nome_de_usuário.github.io (substitua seu_nome_de_usuário pelo seu nome de usuário real do GitHub). Para um site de projeto, o nome pode ser qualquer um.
+Visibilidade: Escolha Public (Público), pois sites privados exigem uma assinatura paga para usar o GitHub Pages.
+Marque a opção Add a README file (Adicionar um arquivo README).
+Clique em Create repository (Criar repositório). 
+2. Carregar Seus Arquivos
+Você pode carregar seus arquivos de duas maneiras:
+Via interface web: Na página principal do seu novo repositório no GitHub, clique em Add file (Adicionar arquivo) e depois em Upload files (Carregar arquivos). Arraste e solte os arquivos do seu site para a área indicada. Certifique-se de que seu arquivo principal se chame index.html.
+Via Git (linha de comando): Clone o repositório para sua máquina local usando git clone <URL_do_repositório>, adicione seus arquivos ao diretório local, e use git add ., git commit -m "Initial commit" e git push origin main para enviar os arquivos. 
+3. Habilitar o GitHub Pages
+Após carregar os arquivos, você precisa ativar o serviço:
+Na página do seu repositório, clique na aba Settings (Configurações).
+Na barra lateral esquerda, na seção "Code and automation", clique em Pages.
+Em "Build and deployment", na seção "Source", selecione a opção Deploy from a branch (Fazer deploy a partir de um branch).
+Abaixo, em "Branch", use o menu suspenso para selecionar o branch principal (geralmente main ou master) e a pasta raiz (geralmente /root).
+Clique em Save (Salvar). 
+4. Acessar Seu Site
+Seu site estará acessível em https://seu_nome_de_usuário.github.io/ (para sites de usuário) ou https://seu_nome_de_usuário.github.io/nome_do_repositorio/ (para sites de projeto). 
+Pode levar alguns minutos (até 10 minutos) para que o site seja publicado pela primeira vez. 
+Dicas Adicionais
+Domínio Personalizado: Você pode configurar seu próprio domínio, como www.meusite.com, nas configurações de Pages do seu repositório, configurando os registros DNS necessários no seu provedor de domínio.
+Limites: O GitHub Pages é ótimo para sites estáticos, mas possui limites de uso, como tamanho máximo de 1 GB e largura de banda flexível de 100 GB por mês. 
+
+
